@@ -1,7 +1,7 @@
 <?php 
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Library\Boolean;
-use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation;
-class Boolean implements Validation 
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Library\Boolean;
+use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator;
+class Boolean implements Validator 
 {
     public function validate(mixed $value): bool 
     {

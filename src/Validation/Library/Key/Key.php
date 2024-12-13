@@ -1,7 +1,7 @@
 <?php 
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Library\Key;
-use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation;
-class Key implements Validation 
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Library\Key;
+use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator;
+class Key implements Validator 
 {
     public function validate(mixed $value): bool 
     {

@@ -1,24 +1,25 @@
 <?php
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Factory;
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Factory;
 
 use AbabilItWorld\{
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Text\Text as TextValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Html\Html as HTMLValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Username\Username as UsernameValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Password\Password as PasswordValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Email\Email as EmailValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Url\Url as URLValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Integer\Integer as IntegerValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Float\Float as FloatValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Boolean\Boolean as BooleanValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\FilePath\FilePath as FilePathValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Key\Key as KeyValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Phone\Phone as PhoneValidator,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\Json\Json,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\ColorHex\ColorHex,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\ArrayValidation\ArrayValidation,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\SqlString\SqlString,
-    FlexSecurityValidationByAbabilitWorld\Validation\Library\UserRole\UserRole,
+    FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Text\Text as TextValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Html\Html as HTMLValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Username\Username as UsernameValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Password\Password as PasswordValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Email\Email as EmailValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Url\Url as URLValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Integer\Integer as IntegerValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Float\Float as FloatValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Boolean\Boolean as BooleanValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\FilePath\FilePath as FilePathValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Key\Key as KeyValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\PhoneNumber\PhoneNumber as PhoneNumberValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\Json\Json as JSONValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\ColorHex\ColorHex as ColorHexValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\ArrayValidation\ArrayValidation as ArrayValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\SqlString\SqlString as SQLStringValidator,
+    FlexDataManageByAbabilitWorld\Validation\Library\UserRole\UserRole as UserRoleValidator,
 
 };
 
@@ -56,9 +57,9 @@ class Factory
         {
             'text' => new TextValidator(),
             'html' => new HTMLValidator(),
-            'username' => new EmailValidator(),
+            'username' => new UsernameValidator(),
             'email' => new EmailValidator(),
-            'password' => new EmailValidator(),
+            'password' => new PasswordValidator(),
             'url' => new URLValidator(),
             'integer' => new IntegerValidator(),
             'float' => new FloatValidator(),
@@ -67,9 +68,9 @@ class Factory
             'key' => new KeyValidator(),
             'phone' => new PhoneNumberValidator(),
             'json' => new JSONValidator(),
-            'hex_color' => new HexColorValidator(),
-            'array' => new ArrayValidator(),
-            'sql_like' => new SQLLikeValidator(),
+            'color_hex' => new ColorHexValidator(),
+            'array_validation' => new ArrayValidator(),
+            'sql_string' => new SQLStringValidator(),
             'user_role' => new UserRoleValidator(),
             default => throw new \InvalidArgumentException("Unsupported validation rule: $rule"),
         };

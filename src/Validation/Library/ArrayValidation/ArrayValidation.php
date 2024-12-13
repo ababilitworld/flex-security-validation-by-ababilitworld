@@ -1,7 +1,7 @@
 <?php 
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Library\ArrayValidation;
-use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation;
-class ArrayValidation implements Validation 
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Library\ArrayValidation;
+use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator;
+class ArrayValidation implements Validator 
 {
     public function validate(mixed $value): bool 
     {

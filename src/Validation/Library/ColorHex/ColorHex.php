@@ -1,7 +1,7 @@
 <?php 
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Library\ColorHex;
-use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation;
-class ColorHex implements Validation 
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Library\ColorHex;
+use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator;
+class ColorHex implements Validator 
 {
     public function validate(mixed $value): bool 
     {

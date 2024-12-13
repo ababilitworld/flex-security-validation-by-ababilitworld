@@ -1,7 +1,7 @@
 <?php 
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Library\Phone;
-use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation;
-class Phone implements Validation 
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Library\PhoneNumber;
+use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator;
+class PhoneNumber implements Validator 
 {
     public function validate(mixed $value): bool 
     {

@@ -1,7 +1,7 @@
 <?php 
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Library\UserRole;
-use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation;
-class UserRole implements Validation 
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Library\UserRole;
+use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator;
+class UserRole implements Validator 
 {
     public function validate(mixed $value): bool 
     {

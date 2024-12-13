@@ -1,7 +1,7 @@
 <?php 
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Library\FilePath;
-use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation;
-class FilePath implements Validation 
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Library\FilePath;
+use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator;
+class FilePath implements Validator 
 {
     public function validate(mixed $value): bool 
     {

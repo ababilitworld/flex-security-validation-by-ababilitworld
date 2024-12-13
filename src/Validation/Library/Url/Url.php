@@ -1,7 +1,7 @@
 <?php 
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Library\Url;
-use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation;
-class Url implements Validation 
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Library\Url;
+use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator;
+class Url implements Validator 
 {
     public function validate(mixed $value): bool 
     {

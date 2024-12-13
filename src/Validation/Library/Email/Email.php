@@ -1,7 +1,7 @@
 <?php 
-namespace AbabilItWorld\FlexSecurityValidationByAbabilitWorld\Validation\Library\Email;
-use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation;
-class Email implements Validation 
+namespace AbabilItWorld\FlexDataManageByAbabilitWorld\Validation\Library\Email;
+use AbabilItWorld\FlexInterfaceByAbabilitworld\Interface\Security\Validation\Validation as Validator;
+class Email implements Validator 
 {
     public function validate(mixed $value): bool 
     {
